@@ -28,7 +28,7 @@ i would have implemented time series modelling along with more tuning of the hyp
 |initial|53.012271|53.012271|43.518283|1.79413|
 |add_features|34.804929|34.804929|34.804929|0.61719|
 |hpo|43.518283|43.518283|43.518283|0.60101|
-|hpo2|40.121809|40.266762|41.335800|0.58809
+|hpo2|40.121809|40.266762|41.335800|0.58809|
 
 
 
@@ -45,4 +45,4 @@ i would have implemented time series modelling along with more tuning of the hyp
 ![model_test_score.png](img/model_test_score.png)
 
 ## Summary
-TODO: Add your explanation
+This project helped me to learn about the usability of AutoGluon library. It helped me to learn about the stability and efficency of aws autogloun library which tries to predict the best possible ML algorthims without much hinderence, i have only used ml.t3 medium instance throughout whereas if i was implementing it normal circumstances i would have required a higher upgraded instance, all the submissions i have maded were linked with kaggle project bike sharing demand , all the submission values were first checcked for negative values and in case if there were any they replaced with zero values, as kaggle rejects all the submissions with negative values. In initial stage i just implemented autogloun with the instructed hyper parameters without doing any feature engineering which resulted in kagggle score of 1.7-1.8 with quite high Root mean square error, in second iteration feature engineering on datetime feature was done after correcting its data type and generated four features day,hour,year,month, along with that weather and season was changed to category data type as well. This improved the submission score 0.61 and with low rmse, in the third and fourth ieration more features were generated after checking correlations and having more hyper parameters which results in improving the score upto 0.58. In this excercise if i was given more time i could have implemeted time series modelling along with generating more time series plots and features 
